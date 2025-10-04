@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,600&family=Cairo:wght@700;800&family=Langar&family=Roboto:wght@100;300;500&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5 border-bottom border-dark">
+      <h1 class="fs-2 fw-bold pb-5">Bookmarker</h1>
+    </div>
+    <div class="container content mt-5 text-center p-5">
+      <h4>Bookmark your favorite sites</h4>
+      <form>
+        <label for="siteName" class="py-4 fw-bold fs-4">Site Name</label>
+        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name"> 
+        <label for="SiteURL" class="py-4 fw-bold fs-4">Site URL</label>
+        <input type="text" id="SiteURL" class="form-control" placeholder="Website URL "> 
+        <button id="submitBtn" type="button"  onclick="addWebsite()" class="btn btn-primary mt-5"> Submit</button>
+      </form>
+
+    </div>
+    <div class="container mt-5 ">
+      <div id="display">
+        <div class="siteItem">
+          <h3 class="d-inline-block">Google</h3>
+          <a id="visitBtn" class="btn btn-primary d-inline-block mx-2" href="https://www.google.com" target="_blank">Visit</a>
+          <button  onclick="deleteWebsite(this)" id="deleteBtn" class="btn btn-danger text-white d-inline-block mx-2">Delete</button>
+        </div>
+      </div>
+    </div>
+
+
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

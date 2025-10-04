@@ -1,0 +1,21 @@
+
+h1,p{
+    color: #AAA !important;
+}
+.content{
+    background-color: rgb(238, 238, 238);
+}
+
+
+#display .siteItem
+{
+    background-image: linear-gradient(#EEE,#FFF);
+    padding: 24px;
+    margin: 16px 0;
+}
+#display .siteItem h3
+{
+    width: 30%;
+    color: #333333;
+    line-height: 1.6;
+}
